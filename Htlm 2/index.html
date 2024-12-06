@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Practice </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-form">
+          <div class="header">
+              <h2>Mortgage Calculator</h2>
+              <a href="#" class="clear-all">Clear all</a>
+           </div> 
+
+            <form class="Mortgage-form">
+                  <label for="Mortgage">Mortgage Amount</label>
+                  <div class="input-group">
+                    <span class="placeholder">£</span>
+                    <input type="number" class="text-input">
+                  </div>
+                
+                 <div class="input-row">
+                    <div class="input-col">
+                        <label for="mortgage-term">Mortgage Term</label>
+                        <div class="horizontals">
+                            <input type="number" class="text-input2"/>
+                             <span class="placeholder2">Years</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="input-col">  
+                        <label for="interest-rate">Interest Rate</label>
+                        <div class="horizontals">
+                            <input type="number" class="text-input2"/>
+                            <span class="placeholder2">%</span>
+                        </div>
+                    </div>
+                 </div>
+
+                 <label for="mortgage-type">Mortgage Type</label>
+                 <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" name="option" class="radio-input">
+                        <p>Repayment</p>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" name="option" class="radio-input">
+                         <p>Interest only</p>
+                    </div>
+                 </div>
+                 <button type="submit" class="calculate-btn">
+                     Calculate Repayments
+                 </button>
+            </form> 
+       </div>
+
+      <div class="result">
+            <div class=result-image>
+                <img src="calculator-icon.svg" alt="Results illustration">
+            </div>
+            <div class="result-text">
+            <h3>Results shown here</h3>
+            <p>Complete the form and click 'calculate payements' to see what your monthly payment will be</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
